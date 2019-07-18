@@ -213,9 +213,17 @@ img {
 .home .main-header {
   padding: 0 8%;
 }
+.home .main-header h1 {
+  margin: 10px 0;
+}
 .home .main-header .main-header-text {
   padding: 1% 0;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .main-header .main-header-text h1 {
+    font-size: 2.7em;
+  }
 }
 .home .content-section {
   margin: 30px 0;
