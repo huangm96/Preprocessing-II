@@ -1,1 +1,31 @@
 // Mixins in here
+.buttonStyle(@bg-color, @text-color){
+    background-color:@bg-color;
+    width:100%;
+    padding:10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    color:@text-color;
+
+    &:hover{
+        background-color:lighten(@bg-color,50%);
+        color:black;
+        
+      }
+}
+
+.displayColumn(){
+    display:flex;
+    flex-direction: column;
+    padding:5px 8%;
+}
+
+.animation-bgcolor(@color1,@color2){
+@keyframes abgcolor{
+    50% {background-color:@color1;}
+    100% {background-color:@color2;}
+}
+
+animation-name: abgcolor;
+animation-duration:4s;
+}
