@@ -210,6 +210,18 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  animation-name: abgcolor;
+  animation-duration: 4s;
+}
+@keyframes abgcolor {
+  50% {
+    background-color: lightblue;
+  }
+  100% {
+    background-color: lightyellow;
+  }
+}
 .home .main-header {
   padding: 0 8%;
 }
